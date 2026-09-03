@@ -1,12 +1,12 @@
 <!DOCTYPE html> 
 <html> 
  <head>
-   <title>Foor order </title>title>
+   <title>Foor order </title>
 </head>
  <body>
    <h2>My Food order page </h2>
    <p>Topic</p>
-   <p style=“color:red”>The style is attribute of paragraph tsg</p>
+   <p style=“color:red”>The style is attribute of paragraph tag</p>
  
  
  <table>
@@ -14,7 +14,7 @@
      <th>Menu</th>
      <th>Menu</th>
  
- <table>
+  </tr>
    <tr>
      <td> Crab fried rice <br>
      <img src=“menu1.jpg”alt=“flower”wideth=“50”heing=“50”>
