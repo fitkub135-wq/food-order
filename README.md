@@ -22,7 +22,8 @@
     <td>Small rice noodles</td>
     
    </tr>
-   </tr>table>
+   </tr>
+   </table>
  </body>
 </html>
 
