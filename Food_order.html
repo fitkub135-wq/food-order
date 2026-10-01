@@ -1,72 +1,31 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Order</title>
-    <style>
-        table {
-            margin: 20px auto;
-            width: 80%;
-            border-collapse: collapse;
-            font-family: sans-serif;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        /* ควบคุมขนาดรูปภาพเมนูอาหารให้เท่ากัน */
-        .food-img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-top: 5px;
-        }
-    </style>
-</head>
-<body>
-    <h2>My food order page</h2>
+<html>
+  <head>
+    <title>Foor order </title>
+  </head>
+  <body>
+    <h2> My food order page </h2>
     <p>Topic</p>
     <p style="color: red">The style is attribute of paragraph tag</p>
 
-    <table>
-        <tr>
-            <th>Menu</th>
-            <th>Quantity</th>
-        </tr>
-        <!-- เมนูที่ 1: ใช้รูป IMG_1270.png -->
-        <tr>
-            <td>
-                Crab fried rice <br>
-                <img src="IMG_1270.png" alt="Crab fried rice" class="food-img">
-            </td>
-            <td>
-                <input type="number" id="qty1" min="1" value="1" placeholder="Quantity">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Small rice noodles <br>
-                <img src="IMG_1268.jpeg" alt="Small rice noodles" class="food-img">
-            </td>
-            <td>
-                <input type="number" id="qty2" min="1" value="1" placeholder="Quantity">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Other Menu <br>
-                <img src="IMG_1269.jpeg" alt="Other Menu" class="food-img">
-            </td>
-            <td>
-                <input type="number" id="qty3" min="1" value="1" placeholder="Quantity">
-            </td>
-        </tr>
-    </table>
-</body>
+  <table align="center" style="width: 80%">
+    <tr>
+      <th>Menu</th>
+      <th>Menu</th>
+
+  </tr>
+  <tr>
+    <td> Crab fried rice <br>
+    <img src="IMG_1269.jpeg" alt="Flowers" width="50" height="50">
+    <input type="namber" id="qty" min="1" value="1" placeholder="Qunatity">
+    </td>
+      
+    </tr>
+    <tr>
+    <td>Small rice noodles</td>
+
+    
+  </tr>
+  </table>
+  </body>
 </html>
