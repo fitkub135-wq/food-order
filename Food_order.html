@@ -2,18 +2,30 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Order</title>
     <style>
-        /* ใช้ CSS แทนแอตทริบิวต์ align ที่ล้าสมัย เพื่อจัดตารางให้อยู่กึ่งกลาง */
         table {
-            margin: 0 auto;
+            margin: 20px auto;
             width: 80%;
             border-collapse: collapse;
+            font-family: sans-serif;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px;
             text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* ควบคุมขนาดรูปภาพเมนูอาหารให้เท่ากัน */
+        .food-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -25,23 +37,34 @@
     <table>
         <tr>
             <th>Menu</th>
-            <th>Quantity</th> <!-- เปลี่ยนหัวข้อคอลัมน์ที่สองให้ตรงกับข้อมูล -->
+            <th>Quantity</th>
         </tr>
+        <!-- เมนูที่ 1: ใช้รูป IMG_1270.png -->
         <tr>
             <td>
                 Crab fried rice <br>
-                <img src="IMG_1270.png" alt="Crab fried rice" width="50" height="50">
+                <img src="IMG_1270.png" alt="Crab fried rice" class="food-img">
             </td>
             <td>
-                <!-- แก้ไขจาก type="namber" เป็น "number" และ placeholder จาก "Qunatity" เป็น "Quantity" -->
-                <input type="number" id="qty" min="1" value="1" placeholder="Quantity">
+                <input type="number" id="qty1" min="1" value="1" placeholder="Quantity">
             </td>
         </tr>
         <tr>
-            <td>Small rice noodles</td>
             <td>
-                <!-- เพิ่มช่องใส่จำนวนเงินหรือจำนวนตัวเลขในแถวที่สองให้สมบูรณ์ -->
-                <input type="number" id="qty_noodles" min="1" value="1" placeholder="Quantity">
+                Small rice noodles <br>
+                <img src="IMG_1268.jpeg" alt="Small rice noodles" class="food-img">
+            </td>
+            <td>
+                <input type="number" id="qty2" min="1" value="1" placeholder="Quantity">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Other Menu <br>
+                <img src="IMG_1269.jpeg" alt="Other Menu" class="food-img">
+            </td>
+            <td>
+                <input type="number" id="qty3" min="1" value="1" placeholder="Quantity">
             </td>
         </tr>
     </table>
