@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Foor order </title>
-  </head>
-  <body>
-    <h2> My food order page </h2>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Order</title>
+    <style>
+        /* ใช้ CSS แทนแอตทริบิวต์ align ที่ล้าสมัย เพื่อจัดตารางให้อยู่กึ่งกลาง */
+        table {
+            margin: 0 auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>My food order page</h2>
     <p>Topic</p>
     <p style="color: red">The style is attribute of paragraph tag</p>
 
-  <table align="center" style="width: 80%">
-    <tr>
-      <th>Menu</th>
-      <th>Menu</th>
-
-  </tr>
-  <tr>
-    <td> Crab fried rice <br>
-    <img src="IMG_1270.png" alt="Flowers" width="50" height="50">
-    <input type="namber" id="qty" min="1" value="1" placeholder="Qunatity">
-    </td>
-      
-    </tr>
-    <tr>
-    <td>Small rice noodles</td>
-
-    
-  </tr>
-  </table>
-  </body>
+    <table>
+        <tr>
+            <th>Menu</th>
+            <th>Quantity</th> <!-- เปลี่ยนหัวข้อคอลัมน์ที่สองให้ตรงกับข้อมูล -->
+        </tr>
+        <tr>
+            <td>
+                Crab fried rice <br>
+                <img src="IMG_1270.png" alt="Crab fried rice" width="50" height="50">
+            </td>
+            <td>
+                <!-- แก้ไขจาก type="namber" เป็น "number" และ placeholder จาก "Qunatity" เป็น "Quantity" -->
+                <input type="number" id="qty" min="1" value="1" placeholder="Quantity">
+            </td>
+        </tr>
+        <tr>
+            <td>Small rice noodles</td>
+            <td>
+                <!-- เพิ่มช่องใส่จำนวนเงินหรือจำนวนตัวเลขในแถวที่สองให้สมบูรณ์ -->
+                <input type="number" id="qty_noodles" min="1" value="1" placeholder="Quantity">
+            </td>
+        </tr>
+    </table>
+</body>
 </html>
